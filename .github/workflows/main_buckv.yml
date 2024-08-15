@@ -25,10 +25,10 @@ jobs:
       - name: Create and start virtual environment
         run: |
           python -m venv venv_name
-          source venv_name/bin/activate
+          venv_name\Scripts\activate.bat
       
       - name: Install dependencies
-        run: pip install -r my_project/requirements.txt
+        run: pip install -r requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
