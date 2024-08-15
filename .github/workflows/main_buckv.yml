@@ -25,7 +25,8 @@ jobs:
       - name: Create and start virtual environment
         run: |
           python -m venv venv_name
-          venv_name/Scripts/activate.bat
+          echo %VIRTUAL_ENV%  
+          venv_name/bin/activate
       
       - name: Install dependencies
         run: pip install -r requirements.txt
